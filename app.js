@@ -34,6 +34,10 @@ app.get("/login", (req, res) => {
   res.render("login")
 })
 
+app.get("/register", (req, res) => {
+  res.render("register")
+})
+
 app.listen(PORT, (req, res) =>  {
   console.log("Server running in http://localhost:" + PORT);
 })

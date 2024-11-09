@@ -13,14 +13,23 @@
   <div class="register-form">
     <h1>Form Registration</h1>
 
-    <form action="register" method="post">
+    <form action="register" method="post" class="login-form register-form">
       <label for="user">User name</label>
       <input type="text" name="user" required>
+
+      <label for="user">Full Name</label>
+      <input type="text" name="name" required>
+
+      <label for="rol">Rol</label>
+      <select name="rol" id="rol" class="select-css">
+        <option value="admin">Admin</option>
+        <option value="data entry">Data Entry</option>
+      </select>
 
       <label for="pass">Password</label>
       <input type="password" name="pass" required>
 
-      <div style="display:inline;">
+      <div style="display:inline; width: 100%;">
         <a href="/" class="btn-cancel">Cancel</a><input type="submit" class="btn-save" value="Save">
       </div>
     </form>
