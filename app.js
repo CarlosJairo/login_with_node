@@ -26,9 +26,19 @@ app.use(session({
 
 const connection = require("./database/db");
 
-app.get("/", (req, res) => {
-  res.render("index", {msg: "ROOT"})
-})
+app.get('/', (req, res) => {
+  if (req.session.loggedin) {
+    res.render('index', {
+      login: true,
+      name: req.session.name
+    });
+  } else {
+    res.render('index', {
+      login: false,
+      name: 'Debe iniciar sesión'
+    });
+  }
+});
 
 app.get("/login", (req, res) => {
   res.render("login")
@@ -106,22 +116,6 @@ app.post('/auth', async (req, res)=> {
   });
 }
 })
-
-
-app.get('/', (req, res)=> {
-  if (req.session.loggedin) {
-      res.render('index',{
-          login: true,
-          name: req.session.name          
-      });    
-  } else {
-      res.render('index',{
-          login:false,
-          name:'Debe iniciar sesión'          
-      });            
-  }
-  res.end();
-});
 
 
 app.use(function(req, res, next) {

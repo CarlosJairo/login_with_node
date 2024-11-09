@@ -54,7 +54,7 @@ input {
   margin-bottom: 1rem;
 }
 
-.login-form form{
+.login-form form {
   width: 100%;
 
 }
@@ -71,11 +71,12 @@ input {
   width: 100%;
   padding: 1rem;
   background-color: #6e42c1dc;
+  font-weight: 600;
 }
 
 .btn-login:hover {
   background-color: #6f42c1;
-} 
+}
 
 .btn-register {
   width: 100%;
@@ -86,13 +87,14 @@ input {
   appearance: button;
   text-decoration: none;
   text-align: center;
+  font-weight: bold;
 }
 
 .btn-register:hover {
   background: #34d399;
 }
 
-.a-login:link, 
+.a-login:link,
 .a-login:visited {
   background: #fff;
   color: black;
@@ -108,7 +110,7 @@ input {
 }
 
 
-.a-logout:link, 
+.a-logout:link,
 .a-logout:visited {
   background: #fff;
   color: black;
@@ -124,10 +126,23 @@ input {
 }
 
 .register-form {
-  width: 300px;
+  width: 40%;
+  text-align: center;
 }
 
-.btn-register{
+.register-form form {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.register-form label {
+  font-weight: 500;
+  text-align: left;
+  padding-left: 1rem;
+  width: 100%;
+}
+
+.btn-register {
   width: 100%;
   padding: 15px;
   background-color: #34D399;
@@ -142,20 +157,22 @@ input {
   -webkit-appearance: button;
   -moz-appearance: button;
   appearance: button;
-  text-decoration: none;  
+  text-decoration: none;
 }
-.btn-register:hover,.btn-register:active{
-  color:#fff;
+
+.btn-register:hover,
+.btn-register:active {
+  color: #fff;
   background-color: #10B981;
-  border-color:#10B981
-;
+  border-color: #10B981;
 }
-.btn-register:focus{
-  box-shadow:0 0 0 3px #10B981;
+
+.btn-register:focus {
+  box-shadow: 0 0 0 3px #10B981;
 }
 
 
-.btn-save{
+.btn-save {
   width: 50%;
   padding: 15px;
   background-color: #1D4ED8;
@@ -163,26 +180,29 @@ input {
   box-sizing: border-box;
   cursor: pointer;
   font-weight: bold;
-  font-size:medium;
+  font-size: medium;
   color: #ffffff;
   margin-top: 20px;
   /* Para dar la apariencia de un boton */
   -webkit-appearance: button;
   -moz-appearance: button;
   appearance: button;
-  text-decoration: none;  
+  text-decoration: none;
 }
-.btn-save:hover,.btn-save:active{
-  color:#fff;
+
+.btn-save:hover,
+.btn-save:active {
+  color: #fff;
   background-color: #1E3A8A;
-  border-color:#1E3A8A;
+  border-color: #1E3A8A;
 }
-.btn-save:focus{
-  box-shadow:0 0 0 3px #1E3A8A;
+
+.btn-save:focus {
+  box-shadow: 0 0 0 3px #1E3A8A;
 }
 
 
-.btn-cancel{
+.btn-cancel {
   width: 50%;
   padding: 15px;
   background-color: #9CA3AF;
@@ -190,52 +210,61 @@ input {
   box-sizing: border-box;
   cursor: pointer;
   font-weight: bold;
-  font-size:medium;
+  font-size: medium;
   color: #ffffff;
   text-align: center;
   margin-top: 20px;
-  /* Para dar la apariencia de un boton */
   -webkit-appearance: button;
   -moz-appearance: button;
   appearance: button;
-  text-decoration: none;  
+  text-decoration: none;
 }
-.btn-cancel:hover,.btn-cancel:active{
-  color:#fff;
+
+.btn-cancel:hover,
+.btn-cancel:active {
+  color: #fff;
   background-color: #6B7280;
-  border-color:#6B7280
-;
+  border-color: #6B7280;
 }
-.btn-cancel:focus{
-  box-shadow:0 0 0 3px #6B7280;
+
+.btn-cancel:focus {
+  box-shadow: 0 0 0 3px #6B7280;
 }
 
 
 .select-css {
   display: block;
-  font-size: 16px;  
-  font-weight: 400;  
+  font-size: 16px;
+  font-weight: 400;
   line-height: 1.3;
-  padding: .4em 1.4em .3em .8em;
+  font-family: "Poppins", serif;
+  padding: .4em 1.4em .3em 1.5rem;
   width: 400px;
-  max-width: 100%;
   box-sizing: border-box;
-  margin: 0;  
-  background-color: #f5f5f5;  
- }
- .select-css::-ms-expand {
+  margin: 0 0 1rem;
+  background-color: transparent;
+  min-width: 100%;
+  border: 1px solid #ced4da;
+}
+
+.select-css::-ms-expand {
   display: none;
- }
- .select-css:hover {
+}
+
+.select-css:hover {
   border-color: #888;
- }
- .select-css:focus {
+}
+
+.select-css:focus {
   border-color: #aaa;
   box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
   box-shadow: 0 0 0 3px -moz-mac-focusring;
   color: #222;
   outline: none;
- }
- .select-css option {
-  font-weight:normal;
- }
+}
+
+.select-css option {
+  font-weight: normal;
+  width: 100%;
+  padding: 0;
+}

@@ -14,9 +14,9 @@
     <form action="auth" method="POST">
       <input type="text" name="user" placeholder="User" autofocus required>
       <input type="password" name="pass" placeholder="Password" required>
-      <input type="submit" class="btn-login" value="Login">
+      <input type="submit" class="btn-login btn" value="Login">
     </form>
-    <a href="register" class="btn-register">Register</a>
+    <a href="register" class="btn-register btn">Register</a>
 
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
@@ -29,7 +29,7 @@
           showConfirmButton: '<%= showConfirmButton %>',
           timer: '<%= timer %>'
         }).then(() => {
-          window.location = '/<%= %>'
+          window.location = '/<%= ruta %>'
         })
       </script>
       <% } %>
