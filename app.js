@@ -10,7 +10,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 app.use("/resources", express.static("public"));
-app.use("resources", express.static(__dirname + "/public"));
+// app.use("resources", express.static(__dirname + "/public"));
 
 app.set("view engine", "ejs");
 
